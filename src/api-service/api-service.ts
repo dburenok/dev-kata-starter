@@ -3,7 +3,7 @@ import { SubmissionResult } from "../types/submission-result.type";
 
 const GET_TEST_STRINGS_URL = "https://getteststrings-qfyyyjacqa-uc.a.run.app";
 const SUBMIT_URL = "https://submitresult-qfyyyjacqa-uc.a.run.app";
-const kataToken = ""; // TODO
+const kataToken = "cl-dev-kata";
 
 export async function getTestStrings(): Promise<string[]> {
   return Axios.get(GET_TEST_STRINGS_URL).then((response) => response.data);
